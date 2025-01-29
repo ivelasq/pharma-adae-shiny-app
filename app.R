@@ -4,6 +4,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(DT)
+library(viridis)
 
 adae_data <- readRDS("adae.Rds")
 
@@ -109,8 +110,7 @@ server <- function(input, output) {
         y = "Proportion",
         fill = "Severity"
       ) +
-      scale_fill_viridis_d() +
-      scale_y_continuous(labels = percent)
+      scale_fill_viridis_d()
   })
   
   # Enhanced Time to Onset Plot
@@ -164,9 +164,9 @@ server <- function(input, output) {
       summarise(n = n(), .groups = "drop") %>%
       pivot_wider(names_from = TRT01P, values_from = n, values_fill = 0) %>%
       mutate(
-        risk_ratio = (`Drug A` / sum(`Drug A`)) / (Placebo / sum(Placebo)),
+        risk_ratio = (`A: Drug X` / sum(`A: Drug X`)) / (`B: Placebo`/ sum(`B: Placebo`)),
         log_rr = log(risk_ratio),
-        se = sqrt(1/`Drug A` + 1/Placebo),
+        se = sqrt(1/`A: Drug X` + 1/`B: Placebo`),
         lower = exp(log_rr - 1.96 * se),
         upper = exp(log_rr + 1.96 * se)
       )
