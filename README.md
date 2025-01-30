@@ -6,7 +6,12 @@ See the deployed app (`app.R`) on [Posit Connect Cloud](https://0194a9e0-36d8-f3
 
 <img width="1464" alt="image5" src="https://github.com/user-attachments/assets/6998f631-08d9-4435-8537-70b8c91c56be" />
 
-## Files
+## Use
+
+- Dataset Generation: Run `00-generate-datasets.R` to create/update `adae.Rds`.
+- Application: Use `app.R` or one of the numbered versions for different iterations of the application.
+
+## Directory structure
 
 In the blog post, we walk through using the [Shiny Assistant](https://gallery.shinyapps.io/assistant/) to create a prototype Shiny app. This repo contains the different iterations of what was produced by the Shiny Assistant.
 
@@ -17,5 +22,5 @@ In the blog post, we walk through using the [Shiny Assistant](https://gallery.sh
 ├── 03-app.R - third iteration of the app (code produced by Shiny Assistant)
 ├── adae.Rds - stored data generated from `00-generate-datasets.R`
 ├── app.R - deployed version of the app (adapted from Shiny Assistant code using the generated ADAE data)
-└── manifest.json - manifest file for Posit Connect Cloud
+└── manifest.json - configuration settings file for Posit Connect Cloud
 ```
