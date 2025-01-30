@@ -5,6 +5,7 @@ library(tidyr)
 library(ggplot2)
 library(DT)
 library(viridis)
+library(gitlink)
 
 adae_data <- readRDS("adae.Rds")
 
@@ -13,6 +14,8 @@ n_subjects <- nrow(adae_data)
 ui <- page_sidebar(
   title = "Adverse Event Analysis",
   theme = bs_theme(version = 5, bootswatch = "flatly"),
+  ribbon_css("https://github.com/ivelasq/pharma-adae-shiny-app",
+             text = "Go to GitHub Repo"),
   
   sidebar = sidebar(
     selectInput("analysis_type", "Select Analysis",

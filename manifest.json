@@ -1092,6 +1092,40 @@
         "RemoteSha": "3.5.1"
       }
     },
+    "gitlink": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "gitlink",
+        "Title": "Add 'Git' Links to Your Web Based Assets",
+        "Version": "0.1.3",
+        "Authors@R": "\n    c(person(given = \"Cole\",\n             family = \"Arendt\",\n             role = c(\"aut\", \"cre\"),\n             email = \"cole@rstudio.com\"),\n      person(given = \"RStudio\",\n             role = c(\"cph\", \"fnd\")))",
+        "Description": "Provides helpers to add 'Git' links to 'shiny'\n    applications, 'rmarkdown' documents, and other 'HTML' based resources.\n    This is most commonly used for 'GitHub' ribbons.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/colearendt/gitlink",
+        "BugReports": "https://github.com/colearendt/gitlink/issues",
+        "Depends": "R (>= 3.1)",
+        "Imports": "htmltools (>= 0.3.6), rlang (>= 0.3.1)",
+        "Suggests": "covr (>= 3.0.1), spelling (>= 2.0), testthat (>= 2.0.0.9000),\nrmarkdown, fs, rprojroot, shiny",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "LazyData": "true",
+        "RoxygenNote": "6.1.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2019-07-19 12:44:55 UTC; carendt",
+        "Author": "Cole Arendt [aut, cre],\n  RStudio [cph, fnd]",
+        "Maintainer": "Cole Arendt <cole@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2019-07-23 12:20:02 UTC",
+        "Built": "R 4.4.0; ; 2024-04-06 00:37:52 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "gitlink",
+        "RemoteRef": "gitlink",
+        "RemoteRepos": "https://cloud.r-project.org",
+        "RemotePkgPlatform": "aarch64-apple-darwin20",
+        "RemoteSha": "0.1.3"
+      }
+    },
     "glue": {
       "Source": "CRAN",
       "Repository": "https://cloud.r-project.org",
@@ -3048,7 +3082,7 @@
       "checksum": "7cb73b66135be691b72bd7fe65db8f3d"
     },
     "app.R": {
-      "checksum": "139ec1598d790138efffbf3f7cd820c7"
+      "checksum": "104e547c2fdbc3359cbe2093792425f5"
     },
     "LICENSE": {
       "checksum": "6b2c278d51af5193073d785a16cde7a0"
